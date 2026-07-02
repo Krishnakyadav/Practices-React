@@ -8,7 +8,8 @@ import ContextData from "./04_practice/ContextData";
 import Routing2 from "./04_practice/Routing2";
 import Routing3 from "./05_Routing/Routing3";
 import LifeCycleInCBC from "./06_LifeCycle/LifeCycleInCBC";
-import FetchProduct from "./07_practices2/FetchProduct";
+import Parent from "./07_practices2/Parent";
+
 
 
 
@@ -29,7 +30,7 @@ const App = () => {
       {/* <Routing3/> */}
       {/* <button onClick={handleToggle}>Toggle</button>
       {toggle && <LifeCycleInCBC />} */}
-     <FetchProduct/>
+     <Parent/>
      
     </div>
   );
