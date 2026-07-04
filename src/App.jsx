@@ -9,6 +9,8 @@ import Routing2 from "./04_practice/Routing2";
 import Routing3 from "./05_Routing/Routing3";
 import LifeCycleInCBC from "./06_LifeCycle/LifeCycleInCBC";
 import Parent from "./07_practices2/Parent";
+import TodoApp from "./07_practices2/TodoApp";
+import Search from "./07_practices2/Search";
 
 
 
@@ -30,7 +32,9 @@ const App = () => {
       {/* <Routing3/> */}
       {/* <button onClick={handleToggle}>Toggle</button>
       {toggle && <LifeCycleInCBC />} */}
-     <Parent/>
+     {/* <Parent/> */}
+     {/* <TodoApp/> */}
+     <Search/>
      
     </div>
   );
