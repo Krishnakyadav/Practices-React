@@ -1,38 +1,30 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Home";
-import Signup from "./Signup";
-import Login from "./Login";
-import Contact from "./Contact";
-import About from "./About";
-import Navbar from "./Navbar";
-
-const routes = createBrowserRouter([
-  {
-    path:"/",
-    element:<Home/>
-  },
-  {
-    path:"/about",
-    element:<About/>
-  },
-   {
-    path:"/contact",
-    element:<Contact/>
-  },
-   {
-    path:"/signup",
-    element:<Signup/>
-  },
-   {
-    path:"/login",
-    element:<Login/>
-  }
-])
+import {BrowserRouter,Routes,Route, Link} from 'react-router-dom'
+import Home from './Home'
+import Signup from './Signup'
+import Login from './Login'
+import Navbar from './Navbar'
+import DashBoard from './DashBoard'
+import ProtectedRoute from './ProtectedRouter'
 
 const Routing3 = () => {
   return (
-   <RouterProvider router = {routes}/>
-  );
-};
+   <BrowserRouter>
+   <Navbar/>
+   <Routes>
+    <Route path='/' element={<Home/>}/>
+   <Route path='/signup' element={<Signup/>}/>
+   <Route path='/login' element={<Login/>}/>
+   <Route
+    path="/dashboard"
+    element={
+      <ProtectedRoute>
+        <DashBoard />
+      </ProtectedRoute>
+    }
+  />
+   </Routes>
+   </BrowserRouter>
+  )
+}
 
-export default Routing3;
+export default Routing3

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
 const Search = () => {
   const [product, setProducts] = useState([]);
@@ -54,3 +54,5 @@ const Search = () => {
 };
 
 export default Search;
+
+

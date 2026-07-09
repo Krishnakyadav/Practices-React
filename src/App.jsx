@@ -8,9 +8,10 @@ import ContextData from "./04_practice/ContextData";
 import Routing2 from "./04_practice/Routing2";
 import Routing3 from "./05_Routing/Routing3";
 import LifeCycleInCBC from "./06_LifeCycle/LifeCycleInCBC";
-import Parent from "./07_practices2/Parent";
 import TodoApp from "./07_practices2/TodoApp";
 import Search from "./07_practices2/Search";
+import LifeCycle from "./06_LifeCycle/LifeCycle";
+import Reducer from "./07_practices2/Reducer";
 
 
 
@@ -33,8 +34,10 @@ const App = () => {
       {/* <button onClick={handleToggle}>Toggle</button>
       {toggle && <LifeCycleInCBC />} */}
      {/* <Parent/> */}
-     {/* <TodoApp/> */}
-     <Search/>
+     <TodoApp/>
+     {/* <Search/> */}
+     {/* <LifeCycle/> */}
+     {/* <Reducer/> */}
      
     </div>
   );

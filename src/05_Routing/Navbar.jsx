@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,22 +7,16 @@ const Navbar = () => {
       <ul>
         <li>
           <Link to="/">Home</Link>
-
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            {" "}
-            <Link to="/signup">SignUp</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
         </li>
+        <li>
+          <Link to="/signup">Signup</Link>
+        </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+       <li><Link to="/dashboard">DashBoard</Link></li>
       </ul>
+       
     </div>
   );
 };
